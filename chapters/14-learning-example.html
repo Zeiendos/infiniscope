@@ -1,87 +1,15 @@
-6<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Learning Example — HEX Walkthrough — Infiniology</title>
-<link href="../assets/styles.css" rel="stylesheet"/>
-<style>
-/* --- Infiniology chapter refinements (Observatory Minimal) --- */
-.hex-block, .failure-grid{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 12px 0 14px;
-}
-.hex-block > div, .failure-grid > div{
-  padding: 12px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: color-mix(in oklab, var(--panel) 92%, transparent);
-}
-.mini{
-  font-size: 11px;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 800;
-  margin-bottom: 6px;
-}
-.big{font-size: 13px}
-.stack{
-  display:grid;
-  gap: 10px;
-  margin: 10px 0 12px;
-}
-.stack .row{
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 12px;
-  background: color-mix(in oklab, var(--panel) 92%, transparent);
-}
-.stack .row strong{display:block; margin-bottom: 4px}
-.callout.usage{border-left-color: var(--accent2)}
-.callout.authority{border-left-color: #f59e0b}
-.callout.failure{border-left-color: #ef4444}
-.callout.hinge{border-left-color: color-mix(in oklab, var(--accent) 70%, #a855f7)}
-.card + .card{margin-top: 18px}
-.card.compact{padding: 16px}
-.card h2{margin-top:0}
-.meta-line{display:flex; gap:10px; flex-wrap:wrap; margin: 8px 0 4px}
-.pill{
-  display:inline-flex; align-items:center; gap:8px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: color-mix(in oklab, var(--accent2) 12%, var(--panel));
-  font-size: 12px; color: var(--muted); font-weight: 700;
-}
-.phase{
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 14px 14px;
-  background: color-mix(in oklab, var(--panel) 94%, transparent);
-  margin: 14px 0;
-}
-.phase h3{margin-top:0}
-.kv{
-  display:grid;
-  grid-template-columns: 180px 1fr;
-  gap: 8px 12px;
-  margin: 8px 0 12px;
-}
-.kv div{padding: 8px 10px; border: 1px solid var(--border); border-radius: 12px; background: var(--panel)}
-.kv .k{color: var(--muted); font-weight: 800; text-transform: uppercase; letter-spacing:.06em; font-size:11px}
-@media (max-width: 980px){
-  .hex-block, .failure-grid{grid-template-columns:1fr}
-  .kv{grid-template-columns:1fr}
-}
-</style></head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Learning &amp; Skill Acquisition — Using HEX — Infiniology</title>
+<link rel="stylesheet" href="../assets/styles.css"/>
+</head>
 <body>
 <div class="container">
-<aside class="sidebar">
-<div class="brand">
+  <aside class="sidebar">
+    <div class="brand">
 <div class="title">INFİNIOLOGY</div>
 <div class="name">Observatory Minimal</div>
 <div class="tag">Telescope, not doctrine • Non-metaphysical • Public canon</div>
@@ -111,87 +39,174 @@
 <a href="16-closing-using-the-map-without-becoming-it.html">16 — Closing: Using the Map Without Becoming It</a>
 </div>
 <script src="../assets/nav.js"></script>
-</aside>
-<main class="main">
-<div class="article">
-<div class="content">
-<div class="kicker">
-<span class="badge">APPLICATION</span>
-<span>First: define the system</span>
-</div>
-<h1>Learning Example: Skill Acquisition Using HEX</h1>
-<p class="lede">A phased walkthrough that shows how to diagnose learning problems and make the right structural move.</p>
-<div class="card">
-<div class="callout usage">
-<div class="label">HOW TO USE THIS EXAMPLE</div>
-<p>This walkthrough shows how to use HEX on a real learning goal. Treat it like a diagnostic loop: define the system, map the axes, identify failure mode, locate authority, and make one small change.</p>
-</div>
-<div class="phase">
-<h3>Phase 1 — Define the system</h3>
-<div class="kv">
-<div class="k">System</div><div>The learner (mind + body + habits)</div>
-<div class="k">Goal</div><div>Increase capability by reorganizing capacity under constraint (not “adding facts”).</div>
-</div>
-<p class="small"><strong>Rule:</strong> Learning is structural change. If there is no structural change, there is no learning.</p>
-</div>
-<div class="phase">
-<h3>Phase 2 — Map the HEX axes</h3>
-<div class="hex-block">
-<div><div class="mini">LOAD</div><div class="big">Task difficulty / Novelty / Speed requirements …</div></div>
-<div><div class="mini">COHERENCE</div><div class="big">Clear mental models / Correct feedback / Proper sequencing …</div></div>
-<div><div class="mini">PERSISTENCE</div><div class="big">Memory consolidation / Physical conditioning / Neural wiring …</div></div>
-</div>
-<div class="stack">
-<div class="row"><strong>Load signals</strong>Task difficulty • Novelty • Speed requirements • Error rate • Emotional pressure • Too little load → boredom • Too much load → overwhelm</div>
-<div class="row"><strong>Coherence signals</strong>Clear mental models • Correct feedback • Proper sequencing • Alignment between effort and result • “Ohhh, I see how this works.” • Random practice, confusion, guessing • Coherence is whether effort produces understandable change.</div>
-<div class="row"><strong>Persistence signals</strong>Memory consolidation • Physical conditioning • Neural wiring • Motivation sustainability • “Will this skill still exist tomorrow? Next month?” • Learning states (HEX classification) • 🟢 FLOW (ideal learning zone)</div>
-</div>
-</div>
-<div class="phase">
-<h3>Phase 3 — Identify state and failure mode</h3>
-<p><strong>State check</strong>: Is the system stable, strained, or in flow?</p>
-<div class="callout failure">
-<div class="label">FAILURE MODES TO WATCH</div>
-<ul><li><strong>Overload</strong>: too much difficulty/pace/pressure for current coherence</li><li><strong>Rigidity</strong>: practice becomes tight, perfectionistic, or repetitive without adaptation</li><li><strong>Decay</strong>: forgetting, inconsistency, or loss of motivation over time</li></ul>
-</div>
-<p class="small">If progress feels random, coherence is the first suspect. If progress is costly, load is too high. If gains vanish, persistence is unprotected.</p>
-</div>
-<div class="phase">
-<h3>Phase 4 — Locate the hinge</h3>
-<div class="callout hinge">
-<div class="label">HINGE SIGNALS</div>
-<ul><li>Repeated failure at the same point</li><li>Plateau despite effort</li><li>Escalating cost for the same progress</li><li>Workarounds multiplying</li></ul>
-</div>
-<p><strong>Interpretation</strong>: the system is asking for reconfiguration, not more effort of the same kind.</p>
-</div>
-<div class="phase">
-<h3>Phase 5 — Authority relocation (the move)</h3>
-<div class="callout authority">
-<div class="label">AUTHORITY CHECK</div>
-<ul><li>What variable actually controls progress right now?</li><li>Who/what is setting the pace: the task, ego, environment, or feedback quality?</li><li>Are decisions and consequences aligned?</li></ul>
-</div>
-<div class="callout usage">
-<div class="label">TRANSFORM MOVE</div>
-<ul><li>Lower load before demanding insight (reduce difficulty, slow pace, reduce pressure)</li><li>Increase coherence before increasing reps (clear model, better feedback, better sequencing)</li><li>Protect persistence (sleep, spaced repetition, consistent schedule)</li></ul>
-</div>
-<p class="small"><strong>Rule:</strong> Authority must relocate—never dissolve. If you lose the ability to choose or rebind, stop and return to role basics.</p>
-</div>
-<div class="phase">
-<h3>Phase 6 — Meaning emerges (don’t force it)</h3>
-<p>Meaning is the narrative that forms after sustained coherence. In learning, meaning shows up as:</p>
-<ul>
-<li>“I understand what’s happening.”</li>
-<li>“I can predict errors and correct them.”</li>
-<li>“This skill belongs to me now.”</li>
-</ul>
-<p class="small">If you try to force meaning (identity claims) before coherence stabilizes, you create rigidity and shame loops.</p>
-</div>
-<p class="small"><strong>Universal rule:</strong> When learning stalls, don’t ask “what’s wrong with me?” Ask “where is load too high, coherence too low, or persistence unprotected—and who has authority to change the controlling constraint?”</p></div>
-<div class="footer-nav"><a href="13-somatic-flow-systems.html">← Prev</a><a href="15-cheat-cards-library.html">Next →</a></div>
-<p class="small">© 2026 Zeiendos. Infiniology™ — CC BY-SA 4.0. • Built for GitHub Pages • Observatory Minimal</p>
-</div>
-</div>
-</main>
+  </aside>
+  <main class="main">
+    <div class="article">
+      <div class="content">
+        <div class="kicker">
+          <span class="badge">APPLICATION</span>
+          <span>First: define the system</span>
+        </div>
+        <h1>Learning &amp; Skill Acquisition — Using HEX</h1>
+        <p class="lede">A complete worked example for skill acquisition.</p>
+        <div class="card">
+          <p>Learning &amp; Skill Acquisition — Using HEX
+First: define the system</p>
+<p>SYSTEM:<br>The learner (mind + body + habits)</p>
+<p>Learning is not “adding knowledge.”
+It is reorganizing capacity under constraint.</p>
+<p>The three HEX axes in learning (plain language)
+1. LOAD → Cognitive &amp; practice demand</p>
+<p>Load in learning includes:</p>
+<p>Task difficulty</p>
+<p>Novelty</p>
+<p>Speed requirements</p>
+<p>Error rate</p>
+<p>Emotional pressure</p>
+<p>Too little load → boredom
+Too much load → overwhelm</p>
+<p>Load is how hard the learning task pushes the system.</p>
+<p>2. COHERENCE → Pattern clarity &amp; alignment</p>
+<p>Coherence in learning is:</p>
+<p>Clear mental models</p>
+<p>Correct feedback</p>
+<p>Proper sequencing</p>
+<p>Alignment between effort and result</p>
+<p>High coherence:</p>
+<p>“Ohhh, I see how this works.”<br>Low coherence:</p>
+<p>Random practice, confusion, guessing</p>
+<p>Coherence is whether effort produces understandable change.</p>
+<p>3. PERSISTENCE → Retention &amp; endurance</p>
+<p>Persistence in learning includes:</p>
+<p>Memory consolidation</p>
+<p>Physical conditioning</p>
+<p>Neural wiring</p>
+<p>Motivation sustainability</p>
+<p>Persistence answers:</p>
+<p>“Will this skill still exist tomorrow? Next month?”</p>
+<p>Learning states (HEX classification)
+🟢 FLOW (ideal learning zone)</p>
+<p>Load: MEDIUM–HIGH</p>
+<p>Coherence: HIGH</p>
+<p>Persistence: STABLE</p>
+<p>Feels like:</p>
+<p>Effortful but engaging</p>
+<p>Time passes quickly</p>
+<p>Errors are informative</p>
+<p>This is deliberate practice.</p>
+<p>🟡 STRAINED (fragile progress)</p>
+<p>Load: HIGH</p>
+<p>Coherence: MEDIUM</p>
+<p>Persistence: DECLINING</p>
+<p>Feels like:</p>
+<p>“I’m almost getting it”</p>
+<p>Frequent frustration</p>
+<p>Progress is real but costly</p>
+<p>Stay here too long → burnout.</p>
+<p>🔴 OVERLOAD (learning collapse)</p>
+<p>Load: EXTREME</p>
+<p>Coherence: LOW</p>
+<p>Persistence: CRASHING</p>
+<p>Feels like:</p>
+<p>Confusion</p>
+<p>Emotional flooding</p>
+<p>“I’m bad at this”</p>
+<p>Learning stops here.</p>
+<p>🔵 RIGIDITY (false mastery)</p>
+<p>Load: LOW</p>
+<p>Coherence: HIGH</p>
+<p>Persistence: HIGH</p>
+<p>Feels like:</p>
+<p>Comfortable repetition</p>
+<p>No errors</p>
+<p>No growth</p>
+<p>This is practice without learning.</p>
+<p>⚫ DECAY (skill loss)</p>
+<p>Load: NONE</p>
+<p>Coherence: FADING</p>
+<p>Persistence: FALLING</p>
+<p>Feels like:</p>
+<p>“I used to be good at this”</p>
+<p>Rust</p>
+<p>Memory loss</p>
+<p>The hill analogy mapped cleanly
+Uphill = learning something new</p>
+<p>Slope: task difficulty (constraint)</p>
+<p>Pedaling: effort, attention</p>
+<p>Load: cognitive demand</p>
+<p>Energy: persistence reserves</p>
+<p>Pedaling harder (cramming):</p>
+<p>Increases short-term progress</p>
+<p>Drains persistence</p>
+<p>Risks exhaustion</p>
+<p>Correct move:</p>
+<p>Lower the gear (reduce load)</p>
+<p>Improve cadence (increase coherence)</p>
+<p>Downhill = consolidation &amp; rest</p>
+<p>Load: low</p>
+<p>Coherence: maintained</p>
+<p>Persistence: recovering</p>
+<p>This is:</p>
+<p>Sleep</p>
+<p>Review</p>
+<p>Light application</p>
+<p>Teaching others</p>
+<p>Downhill time is not wasted — it’s required for persistence.</p>
+<p>The HINGE in learning (this is key)</p>
+<p>A learning hinge occurs when:</p>
+<p>Old strategy stops working</p>
+<p>Errors repeat</p>
+<p>Effort no longer yields improvement</p>
+<p>Typical hinge triggers:</p>
+<p>Plateau</p>
+<p>Persistent mistakes</p>
+<p>Sudden confusion after early success</p>
+<p>Rule applies:</p>
+<p>Authority must relocate, or pathology emerges.</p>
+<p>Authority relocation in learning
+Common failure (pathology)</p>
+<p>Authority stays in:</p>
+<p>Willpower</p>
+<p>Self-judgment</p>
+<p>“Try harder”</p>
+<p>Result:</p>
+<p>Overload</p>
+<p>Shame</p>
+<p>Avoidance</p>
+<p>Healthy relocation (transformation)</p>
+<p>Authority moves to:</p>
+<p>Structure (curriculum)</p>
+<p>Feedback (coach, system)</p>
+<p>Constraints (slower tempo, simpler task)</p>
+<p>Environment (tools, spacing, rest)</p>
+<p>Result:</p>
+<p>Coherence rises</p>
+<p>Load stabilizes</p>
+<p>Persistence recovers</p>
+<p>Meaning in learning (last, not first)</p>
+<p>Meaning emerges when:</p>
+<p>Progress is sustained</p>
+<p>Skill becomes reliable</p>
+<p>Identity updates naturally</p>
+<p>You don’t start with:</p>
+<p>“This is important to me.”</p>
+<p>You end with:</p>
+<p>“This is part of who I am now.”</p>
+<p>Why this reframes “talent”</p>
+<p>Talent is not magic.</p>
+<p>Talent =</p>
+<p>High coherence discovered early + protected persistence</p>
+<p>Burnout =</p>
+<p>High load without coherence</p>
+<p>Plateau =</p>
+<p>High coherence without load</p>
+        </div>
+        <div class="footer-nav"><a href="13-somatic-flow-systems.html">← Prev</a><a href="15-cheat-cards-library.html">Next →</a></div>
+        <p class="small">© 2026 Zeiendos. Infiniology™ — CC BY-SA 4.0 • Built for GitHub Pages • Observatory Minimal</p>
+      </div>
+      
+    </div>
+  </main>
 </div>
 <script src="../assets/nav.js"></script>
 </body>
