@@ -1,15 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>🧪 CHEMIST CHEAT CARD — Infiniology</title>
-<link rel="stylesheet" href="../assets/styles.css"/>
-</head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Cheat Cards Library — Infiniology</title>
+<link href="../assets/styles.css" rel="stylesheet"/>
+<style>
+/* --- Infiniology chapter refinements (Observatory Minimal) --- */
+.hex-block, .failure-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 12px 0 14px;
+}
+.hex-block > div, .failure-grid > div{
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--panel) 92%, transparent);
+}
+.mini{
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+.big{font-size: 13px}
+.stack{
+  display:grid;
+  gap: 10px;
+  margin: 10px 0 12px;
+}
+.stack .row{
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: color-mix(in oklab, var(--panel) 92%, transparent);
+}
+.stack .row strong{display:block; margin-bottom: 4px}
+.callout.usage{border-left-color: var(--accent2)}
+.callout.authority{border-left-color: #f59e0b}
+.callout.failure{border-left-color: #ef4444}
+.callout.hinge{border-left-color: color-mix(in oklab, var(--accent) 70%, #a855f7)}
+.card + .card{margin-top: 18px}
+.card.compact{padding: 16px}
+.card h2{margin-top:0}
+.meta-line{display:flex; gap:10px; flex-wrap:wrap; margin: 8px 0 4px}
+.pill{
+  display:inline-flex; align-items:center; gap:8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--accent2) 12%, var(--panel));
+  font-size: 12px; color: var(--muted); font-weight: 700;
+}
+.phase{
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 14px;
+  background: color-mix(in oklab, var(--panel) 94%, transparent);
+  margin: 14px 0;
+}
+.phase h3{margin-top:0}
+.kv{
+  display:grid;
+  grid-template-columns: 180px 1fr;
+  gap: 8px 12px;
+  margin: 8px 0 12px;
+}
+.kv div{padding: 8px 10px; border: 1px solid var(--border); border-radius: 12px; background: var(--panel)}
+.kv .k{color: var(--muted); font-weight: 800; text-transform: uppercase; letter-spacing:.06em; font-size:11px}
+@media (max-width: 980px){
+  .hex-block, .failure-grid{grid-template-columns:1fr}
+  .kv{grid-template-columns:1fr}
+}
+</style></head>
 <body>
 <div class="container">
-  <aside class="sidebar">
-    <div class="brand">
+<aside class="sidebar">
+<div class="brand">
 <div class="title">INFİNIOLOGY</div>
 <div class="name">Observatory Minimal</div>
 <div class="tag">Telescope, not doctrine • Non-metaphysical • Public canon</div>
@@ -39,185 +111,235 @@
 <a href="16-closing-using-the-map-without-becoming-it.html">16 — Closing: Using the Map Without Becoming It</a>
 </div>
 <script src="../assets/nav.js"></script>
-  </aside>
-  <main class="main">
-    <div class="article">
-      <div class="content">
-        <div class="kicker">
-          <span class="badge">APPLICATION</span>
-          <span>System you’re looking at</span>
-        </div>
-        <h1>🧪 CHEMIST CHEAT CARD</h1>
-        <p class="lede">One-page cards for core audiences.</p>
-        <div class="card">
-          <h3 id="chemist-cheat-card">🧪 CHEMIST CHEAT CARD</h3>
-<p>System you’re looking at</p>
-<p>Reaction, mechanism, or process step</p>
-<p>HEX Mapping</p>
-<p>Load → Energy input, rate pressure, exothermicity, throughput</p>
-<p>Coherence → Mechanism clarity, selectivity, controllability</p>
-<p>Persistence → Catalyst lifetime, yield stability, scalability</p>
-<p>Common Failure Modes</p>
-<p>Overload → runaway, unsafe conditions</p>
-<p>Rigidity → equilibrium trap, no conversion</p>
-<p>Decay → catalyst poisoning, decomposition</p>
-<p>Hinge Questions</p>
-<p>What is the actual controlling constraint right now?</p>
-<p>Is this thermodynamic, kinetic, or transport-limited?</p>
-<p>Authority Check</p>
-<p>What variable truly controls outcome?</p>
-<p>Temperature?</p>
-<p>Separation?</p>
-<p>Purity?</p>
-<p>Residence time?</p>
-<p>Transform by</p>
-<p>Relocating control to a different constraint
-(e.g., equilibrium → separation)</p>
-<h3 id="artist-cheat-card">🎨 ARTIST CHEAT CARD</h3>
-<p>System you’re looking at</p>
-<p>A single piece or project</p>
-<p>HEX Mapping</p>
-<p>Load → Time pressure, emotional intensity, complexity</p>
-<p>Coherence → Composition, rhythm, palette, structure</p>
-<p>Persistence → Theme, identity, desire to continue</p>
-<p>Common Failure Modes</p>
-<p>Overload → burnout, chaos</p>
-<p>Rigidity → perfectionism, dead work</p>
-<p>Decay → loss of direction or meaning</p>
-<p>Perception Check</p>
-<p>What hits first?</p>
-<p>Sensation?</p>
-<p>Emotion?</p>
-<p>Color / sound?</p>
-<p>Are you forcing meaning too early?</p>
-<p>Authority Check</p>
-<p>Who is leading right now?</p>
-<p>The work?</p>
-<p>The audience?</p>
-<p>Your self-image?</p>
-<p>Transform by</p>
-<p>Simplifying constraints</p>
-<p>Letting authority shift to the piece itself</p>
-<h3 id="therapist-coach-cheat-card">🧠 THERAPIST / COACH CHEAT CARD</h3>
-<p>System you’re looking at</p>
-<p>One client pattern or transition</p>
-<p>HEX Mapping</p>
-<p>Load → Stress, trauma activation, life demands</p>
-<p>Coherence → Narrative clarity, emotional integration</p>
-<p>Persistence → Habit stability, identity continuity</p>
-<p>Common Failure Modes</p>
-<p>Overload → emotional flooding</p>
-<p>Rigidity → stuck beliefs, control patterns</p>
-<p>Decay → fragmentation, loss of self-continuity</p>
-<p>Stratification Check</p>
-<p>Observer ≠ Self ≠ Identity ≠ Role</p>
-<p>Where are they collapsed?</p>
-<p>Authority Check</p>
-<p>Who decides?</p>
-<p>Who bears consequences?</p>
-<p>Is insight demanded without authority relocation?</p>
-<p>Transform by</p>
-<p>Lowering load before insight</p>
-<p>Moving authority to safe choice points</p>
-<h3 id="writer-world-builder-cheat-card">✍️ WRITER / WORLD BUILDER CHEAT CARD</h3>
-<p>System you’re looking at</p>
-<p>Character arc, culture, magic system, civilization</p>
-<p>HEX Mapping</p>
-<p>Load → Stakes, conflict, power imbalance</p>
-<p>Coherence → Rules, causality, internal logic</p>
-<p>Persistence → Memory, tradition, legacy</p>
-<p>Common Failure Modes</p>
-<p>Overload → incoherent plot escalation</p>
-<p>Rigidity → static characters or lore</p>
-<p>Decay → world feels hollow or arbitrary</p>
-<p>Authority Check</p>
-<p>Who actually has power?</p>
-<p>Who thinks they do?</p>
-<p>Where does collapse occur?</p>
-<p>Hinge Use</p>
-<p>Revolutions</p>
-<p>Deaths</p>
-<p>Discoveries</p>
-<p>Technological shifts</p>
-<p>Transform by</p>
-<p>Letting rules constrain outcomes</p>
-<p>Allowing meaning to emerge, not be declared</p>
-<h3 id="engineer-cheat-card">⚙️ ENGINEER CHEAT CARD</h3>
-<p>System you’re looking at</p>
-<p>Product, pipeline, infrastructure, team process</p>
-<p>HEX Mapping</p>
-<p>Load → Throughput, complexity, demand, scale</p>
-<p>Coherence → Architecture clarity, interfaces, standards</p>
-<p>Persistence → Reliability, maintainability, continuity</p>
-<p>Common Failure Modes</p>
-<p>Overload → outages, burnout</p>
-<p>Rigidity → brittle systems, slow change</p>
-<p>Decay → tech debt, entropy</p>
-<p>Authority Check</p>
-<p>Who can change the system?</p>
-<p>Who feels the failure?</p>
-<p>Are decisions and consequences aligned?</p>
-<p>Hinge Signals</p>
-<p>Repeated incidents</p>
-<p>Scaling pain</p>
-<p>Increasing workaround reliance</p>
-<p>Transform by</p>
-<p>Redistributing authority closer to execution</p>
-<p>Simplifying interfaces</p>
-<h3 id="doctor-clinician-cheat-card">🩺 DOCTOR / CLINICIAN CHEAT CARD</h3>
-<p>System you’re looking at</p>
-<p>Patient, condition, treatment course</p>
-<p>HEX Mapping</p>
-<p>Load → Disease burden, stressors, side effects</p>
-<p>Coherence → Diagnosis clarity, treatment alignment</p>
-<p>Persistence → Recovery, adherence, quality of life</p>
-<p>Common Failure Modes</p>
-<p>Overload → decompensation</p>
-<p>Rigidity → over-treatment, protocol lock-in</p>
-<p>Decay → non-adherence, chronic decline</p>
-<p>Authority Check</p>
-<p>Who makes decisions?</p>
-<p>Who carries the burden?</p>
-<p>Is the patient empowered or overridden?</p>
-<p>Hinge Moments</p>
-<p>Diagnosis disclosure</p>
-<p>Treatment escalation</p>
-<p>Non-response to care</p>
-<p>Transform by</p>
-<p>Adjusting load before adding intervention</p>
-<p>Relocating authority to patient capacity</p>
-<h3 id="teacher-educator-cheat-card">📚 TEACHER / EDUCATOR CHEAT CARD</h3>
-<p>System you’re looking at</p>
-<p>Student, class, curriculum unit</p>
-<p>HEX Mapping</p>
-<p>Load → Difficulty, pace, assessment pressure</p>
-<p>Coherence → Pattern clarity, sequencing, feedback</p>
-<p>Persistence → Retention, skill durability, motivation</p>
-<p>Common Failure Modes</p>
-<p>Overload → disengagement, anxiety</p>
-<p>Rigidity → rote learning, no growth</p>
-<p>Decay → forgetting, loss of confidence</p>
-<p>Authority Check</p>
-<p>Who controls learning pace?</p>
-<p>Who defines success?</p>
-<p>Is effort rewarded with understanding?</p>
-<p>Hinge Indicators</p>
-<p>Plateau</p>
-<p>Repeated errors</p>
-<p>“I don’t get it” moments</p>
-<p>Transform by</p>
-<p>Lowering load or re-sequencing</p>
-<p>Shifting authority to guided practice</p>
-<p>THE UNIVERSAL RULE (bottom of every card)</p>
-<p>When systems fail, don’t ask “What’s wrong?”
-Ask “Where is load too high, coherence too low, or persistence unprotected — and who has authority to change that?”</p>
-        </div>
-        <div class="footer-nav"><a href="14-learning-example.html">← Prev</a><a href="16-closing-using-the-map-without-becoming-it.html">Next →</a></div>
-        <p class="small">© 2026 Zeiendos. Infiniology™ — CC BY-SA 4.0. • Built for GitHub Pages • Observatory Minimal</p>
-      </div>
-      
-    </div>
-  </main>
+</aside>
+<main class="main">
+<div class="article">
+<div class="content">
+<div class="kicker">
+<span class="badge">APPLICATION</span>
+<span>System you’re looking at</span>
+</div>
+<h1>Cheat Cards Library</h1>
+<p class="lede">One-page diagnostic cards for mapping Load, Coherence, Persistence, failure modes, and authority—across disciplines.</p>
+<div class="card">
+<div class="callout usage">
+<div class="label">HOW TO USE THESE CARDS</div>
+<p>Pick one real system. Map <strong>Load</strong>, <strong>Coherence</strong>, and <strong>Persistence</strong>. Identify the failure mode. Run the Authority Check. Make one small structural change.</p>
+</div>
+<div class="card compact">
+<h2>🧪 CHEMIST CHEAT CARD</h2>
+<div class="kv">
+<div class="k">System</div><div>Reaction, mechanism, or process step</div>
+</div>
+<h3>HEX Mapping</h3>
+<div class="hex-block">
+<div><div class="mini">LOAD</div><div class="big">Energy input, rate pressure, exothermicity, throughput</div></div>
+<div><div class="mini">COHERENCE</div><div class="big">Mechanism clarity, selectivity, controllability</div></div>
+<div><div class="mini">PERSISTENCE</div><div class="big">Catalyst lifetime, yield stability, scalability</div></div>
+</div>
+<h3>Common Failure Modes</h3>
+<div class="failure-grid">
+<div><div class="mini">OVERLOAD</div><div class="big">runaway, unsafe conditions</div></div>
+<div><div class="mini">RIGIDITY</div><div class="big">equilibrium trap, no conversion</div></div>
+<div><div class="mini">DECAY</div><div class="big">catalyst poisoning, decomposition</div></div>
+</div>
+<div class="callout hinge">
+<div class="label">HINGE QUESTIONS</div>
+<ul><li>What is the actual controlling constraint right now?</li><li>Is this thermodynamic, kinetic, or transport-limited?</li></ul>
+</div>
+<div class="callout authority">
+<div class="label">AUTHORITY CHECK</div>
+<ul><li>What variable truly controls outcome?</li><li>Temperature?</li><li>Separation?</li><li>Purity?</li><li>Residence time?</li></ul>
+</div>
+<div class="callout usage">
+<div class="label">TRANSFORM MOVE</div>
+<ul><li>Relocating control to a different constraint</li><li>(e.g., equilibrium → separation)</li></ul>
+</div>
+<p class="small"><strong>Universal rule:</strong> If it fails, locate load/coherence/persistence — then identify who has authority to change the controlling constraint.</p>
+</div>
+<div class="card compact">
+<h2>🎨 ARTIST CHEAT CARD</h2>
+<div class="kv">
+<div class="k">System</div><div>A single piece or project</div>
+</div>
+<h3>HEX Mapping</h3>
+<div class="hex-block">
+<div><div class="mini">LOAD</div><div class="big">Time pressure, emotional intensity, complexity</div></div>
+<div><div class="mini">COHERENCE</div><div class="big">Composition, rhythm, palette, structure</div></div>
+<div><div class="mini">PERSISTENCE</div><div class="big">Theme, identity, desire to continue</div></div>
+</div>
+<h3>Common Failure Modes</h3>
+<div class="failure-grid">
+<div><div class="mini">OVERLOAD</div><div class="big">burnout, chaos</div></div>
+<div><div class="mini">RIGIDITY</div><div class="big">perfectionism, dead work</div></div>
+<div><div class="mini">DECAY</div><div class="big">loss of direction or meaning</div></div>
+</div>
+<div class="callout usage">
+<div class="label">PERCEPTION CHECK</div>
+<ul><li>What hits first?</li><li>Sensation?</li><li>Emotion?</li><li>Color / sound?</li><li>Are you forcing meaning too early?</li></ul>
+</div>
+<div class="callout authority">
+<div class="label">AUTHORITY CHECK</div>
+<ul><li>Who is leading right now?</li><li>The work?</li><li>The audience?</li><li>Your self-image?</li></ul>
+</div>
+<div class="callout usage">
+<div class="label">TRANSFORM MOVE</div>
+<ul><li>Simplifying constraints</li><li>Letting authority shift to the piece itself</li></ul>
+</div>
+<p class="small"><strong>Universal rule:</strong> If it fails, locate load/coherence/persistence — then identify who has authority to change the controlling constraint.</p>
+</div>
+<div class="card compact">
+<h2>🧠 THERAPIST / COACH CHEAT CARD</h2>
+<div class="kv">
+<div class="k">System</div><div>One client pattern or transition</div>
+</div>
+<h3>HEX Mapping</h3>
+<div class="hex-block">
+<div><div class="mini">LOAD</div><div class="big">Stress, trauma activation, life demands</div></div>
+<div><div class="mini">COHERENCE</div><div class="big">Narrative clarity, emotional integration</div></div>
+<div><div class="mini">PERSISTENCE</div><div class="big">Habit stability, identity continuity</div></div>
+</div>
+<h3>Common Failure Modes</h3>
+<div class="failure-grid">
+<div><div class="mini">OVERLOAD</div><div class="big">emotional flooding</div></div>
+<div><div class="mini">RIGIDITY</div><div class="big">stuck beliefs, control patterns</div></div>
+<div><div class="mini">DECAY</div><div class="big">fragmentation, loss of self-continuity</div></div>
+</div>
+<div class="callout usage">
+<div class="label">STRATIFICATION CHECK</div>
+<ul><li>Observer ≠ Self ≠ Identity ≠ Role</li><li>Where are they collapsed?</li></ul>
+</div>
+<div class="callout authority">
+<div class="label">AUTHORITY CHECK</div>
+<ul><li>Who decides?</li><li>Who bears consequences?</li><li>Is insight demanded without authority relocation?</li></ul>
+</div>
+<div class="callout usage">
+<div class="label">TRANSFORM MOVE</div>
+<ul><li>Lowering load before insight</li><li>Moving authority to safe choice points</li></ul>
+</div>
+<p class="small"><strong>Universal rule:</strong> If it fails, locate load/coherence/persistence — then identify who has authority to change the controlling constraint.</p>
+</div>
+<div class="card compact">
+<h2>✍️ WRITER / WORLD BUILDER CHEAT CARD</h2>
+<div class="kv">
+<div class="k">System</div><div>Character arc, culture, magic system, civilization</div>
+</div>
+<h3>HEX Mapping</h3>
+<div class="hex-block">
+<div><div class="mini">LOAD</div><div class="big">Stakes, conflict, power imbalance</div></div>
+<div><div class="mini">COHERENCE</div><div class="big">Rules, causality, internal logic</div></div>
+<div><div class="mini">PERSISTENCE</div><div class="big">Memory, tradition, legacy</div></div>
+</div>
+<h3>Common Failure Modes</h3>
+<div class="failure-grid">
+<div><div class="mini">OVERLOAD</div><div class="big">incoherent plot escalation</div></div>
+<div><div class="mini">RIGIDITY</div><div class="big">static characters or lore</div></div>
+<div><div class="mini">DECAY</div><div class="big">world feels hollow or arbitrary</div></div>
+</div>
+<div class="callout hinge">
+<div class="label">HINGE QUESTIONS</div>
+<ul><li>Revolutions</li><li>Deaths</li><li>Discoveries</li><li>Technological shifts</li></ul>
+</div>
+<div class="callout authority">
+<div class="label">AUTHORITY CHECK</div>
+<ul><li>Who actually has power?</li><li>Who thinks they do?</li><li>Where does collapse occur?</li></ul>
+</div>
+<div class="callout usage">
+<div class="label">TRANSFORM MOVE</div>
+<ul><li>Letting rules constrain outcomes</li><li>Allowing meaning to emerge, not be declared</li></ul>
+</div>
+<p class="small"><strong>Universal rule:</strong> If it fails, locate load/coherence/persistence — then identify who has authority to change the controlling constraint.</p>
+</div>
+<div class="card compact">
+<h2>⚙️ ENGINEER CHEAT CARD</h2>
+<div class="kv">
+<div class="k">System</div><div>Product, pipeline, infrastructure, team process</div>
+</div>
+<h3>HEX Mapping</h3>
+<div class="hex-block">
+<div><div class="mini">LOAD</div><div class="big">Throughput, complexity, demand, scale</div></div>
+<div><div class="mini">COHERENCE</div><div class="big">Architecture clarity, interfaces, standards</div></div>
+<div><div class="mini">PERSISTENCE</div><div class="big">Reliability, maintainability, continuity</div></div>
+</div>
+<h3>Common Failure Modes</h3>
+<div class="failure-grid">
+<div><div class="mini">OVERLOAD</div><div class="big">outages, burnout</div></div>
+<div><div class="mini">RIGIDITY</div><div class="big">brittle systems, slow change</div></div>
+<div><div class="mini">DECAY</div><div class="big">tech debt, entropy</div></div>
+</div>
+<div class="callout hinge">
+<div class="label">HINGE QUESTIONS</div>
+<ul><li>Repeated incidents</li><li>Scaling pain</li><li>Increasing workaround reliance</li></ul>
+</div>
+<div class="callout authority">
+<div class="label">AUTHORITY CHECK</div>
+<ul><li>Who can change the system?</li><li>Who feels the failure?</li><li>Are decisions and consequences aligned?</li></ul>
+</div>
+<div class="callout usage">
+<div class="label">TRANSFORM MOVE</div>
+<ul><li>Redistributing authority closer to execution</li><li>Simplifying interfaces</li></ul>
+</div>
+<p class="small"><strong>Universal rule:</strong> If it fails, locate load/coherence/persistence — then identify who has authority to change the controlling constraint.</p>
+</div>
+<div class="card compact">
+<h2>🩺 DOCTOR / CLINICIAN CHEAT CARD</h2>
+<div class="kv">
+<div class="k">System</div><div>Patient, condition, treatment course</div>
+</div>
+<h3>HEX Mapping</h3>
+<div class="hex-block">
+<div><div class="mini">LOAD</div><div class="big">Disease burden, stressors, side effects</div></div>
+<div><div class="mini">COHERENCE</div><div class="big">Diagnosis clarity, treatment alignment</div></div>
+<div><div class="mini">PERSISTENCE</div><div class="big">Recovery, adherence, quality of life</div></div>
+</div>
+<h3>Common Failure Modes</h3>
+<div class="failure-grid">
+<div><div class="mini">OVERLOAD</div><div class="big">decompensation</div></div>
+<div><div class="mini">RIGIDITY</div><div class="big">over-treatment, protocol lock-in</div></div>
+<div><div class="mini">DECAY</div><div class="big">non-adherence, chronic decline</div></div>
+</div>
+<div class="callout authority">
+<div class="label">AUTHORITY CHECK</div>
+<ul><li>Who makes decisions?</li><li>Who carries the burden?</li><li>Is the patient empowered or overridden?</li><li>Hinge Moments</li><li>Diagnosis disclosure</li><li>Treatment escalation</li><li>Non-response to care</li></ul>
+</div>
+<div class="callout usage">
+<div class="label">TRANSFORM MOVE</div>
+<ul><li>Adjusting load before adding intervention</li><li>Relocating authority to patient capacity</li></ul>
+</div>
+<p class="small"><strong>Universal rule:</strong> If it fails, locate load/coherence/persistence — then identify who has authority to change the controlling constraint.</p>
+</div>
+<div class="card compact">
+<h2>📚 TEACHER / EDUCATOR CHEAT CARD</h2>
+<div class="kv">
+<div class="k">System</div><div>Student, class, curriculum unit</div>
+</div>
+<h3>HEX Mapping</h3>
+<div class="hex-block">
+<div><div class="mini">LOAD</div><div class="big">Difficulty, pace, assessment pressure</div></div>
+<div><div class="mini">COHERENCE</div><div class="big">Pattern clarity, sequencing, feedback</div></div>
+<div><div class="mini">PERSISTENCE</div><div class="big">Retention, skill durability, motivation</div></div>
+</div>
+<h3>Common Failure Modes</h3>
+<div class="failure-grid">
+<div><div class="mini">OVERLOAD</div><div class="big">disengagement, anxiety</div></div>
+<div><div class="mini">RIGIDITY</div><div class="big">rote learning, no growth</div></div>
+<div><div class="mini">DECAY</div><div class="big">forgetting, loss of confidence</div></div>
+</div>
+<div class="callout authority">
+<div class="label">AUTHORITY CHECK</div>
+<ul><li>Who controls learning pace?</li><li>Who defines success?</li><li>Is effort rewarded with understanding?</li><li>Hinge Indicators</li><li>Plateau</li><li>Repeated errors</li><li>“I don’t get it” moments</li></ul>
+</div>
+<div class="callout usage">
+<div class="label">TRANSFORM MOVE</div>
+<ul><li>Lowering load or re-sequencing</li><li>Shifting authority to guided practice</li><li>THE UNIVERSAL RULE (bottom of every card)</li><li>When systems fail, don’t ask “What’s wrong?”</li><li>Ask “Where is load too high, coherence too low, or persistence unprotected — and who has authority to change that?”</li></ul>
+</div>
+<p class="small"><strong>Universal rule:</strong> If it fails, locate load/coherence/persistence — then identify who has authority to change the controlling constraint.</p>
+</div></div>
+<div class="footer-nav"><a href="14-learning-example.html">← Prev</a><a href="16-closing-using-the-map-without-becoming-it.html">Next →</a></div>
+<p class="small">© 2026 Zeiendos. Infiniology™ — CC BY-SA 4.0. • Built for GitHub Pages • Observatory Minimal</p>
+</div>
+</div>
+</main>
 </div>
 <script src="../assets/nav.js"></script>
 </body>
